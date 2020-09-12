@@ -6,7 +6,12 @@ describe("DrinkAbout", function () {
     it("should return 'Drink Whisky'", function () {
       expect(whatCanIDrink(20)).toBe("Drink Beer");
     });
+    it("should return 'Sorry. I can’t tell what drink because that age is incorrect!'", function () {
+      expect(whatCanIDrink(140)).toBe(
+        "Sorry. I can’t tell what drink because that age is incorrect!"
+      );
+    });
   });
 });
 
-// 2 specs, 0 Failures.
+// 3 specs, 0 failures in Jasmine.

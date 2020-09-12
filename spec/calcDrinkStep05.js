@@ -18,9 +18,7 @@ describe("DrinkAbout", function () {
       );
     });
     it("should return an error if we don't supply a number", function () {
-      spyOn(window, "alert");
-      whatCanIDrink("twenty");
-      expect(window.alert).toHaveBeenCalledWith("Error!");
+      expect(whatCanIDrink("twenty")).toBe("Error!");
     });
   });
 });

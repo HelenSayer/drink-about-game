@@ -12,8 +12,13 @@ describe("DrinkAbout", function () {
     it("should return 'Drink Whisky'", function () {
       expect(whatCanIDrink(30)).toBe("Drink Whisky");
     });
+    it("should return 'Sorry. I can’t tell what drink because that age is incorrect!'", function () {
+      expect(whatCanIDrink(140)).toBe(
+        "Sorry. I can’t tell what drink because that age is incorrect!"
+      );
+    });
   });
 });
 
 // After adding all ages checked in Jasmine.
-// 4 specs, 0 failures.
+// 5 specs, 0 failures.

@@ -1,39 +1,41 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# **Drink About Game**
 
-Welcome Helen Sayer,
+## **Challenge**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+Your challenge is to write some tests for the Drink About game.
 
-## Gitpod Reminders
+Drink About is a simple function that will check the age and return a drink appropriate for your age. Create a function called whatCanIDrink. This function should take in age as parameter. The function should do the following:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- If the age is less than 0, then it should return "Sorry. I can’t tell what drink because that age is incorrect!"
 
-`python3 -m http.server`
+- If the age is less than 14, then it should return "Drink Toddy"
 
-A blue button should appear to click: *Make Public*,
+- If the age is less than 18, then it should return "Drink Coke"
 
-Another blue button should appear to click: *Open Browser*.
+- If the age is less than 21, then it should return "Drink Beer"
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- If the age is less than 130, then it should return "Drink Whisky"
 
-A blue button should appear to click: *Make Public*,
+- Else return "Sorry. I can’t tell what drink because that age is incorrect!"
 
-Another blue button should appear to click: *Open Browser*.
+### **Project**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+I have tried to work through the challenge following the example given in the CI training videos.
 
-## Updates Since The Instructional Video
+For each step I have saved the Jasmine files: calcDrinkStep01.js, calcDrinkStep02, etc.
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+And for each step I have saved the corresponding JavaScript files in the same way:
+drinkStep01.js, drinkStep02.js etc.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- step01 and step02 refers to Red-Green-Refactor.
+- step03 and step04 refer to Test suites.
+- step05 refers to the Defensive programming.
+- step06 refers to Spies.
+- step07 refers to Refactoring - Breaking our Tests.
+- step08 refers to Refactoring - Fixing our Tests.
+- step09 refers to setting up each spec.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+In step06 before amending drink.js get the following error as expected.
+![Error message in Jasmine](assets/images/jasmine-alert-error.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Change "return" to "alert" in drink.js at end of if else statement to fix. Now all 6 specs in calcDrink pass.

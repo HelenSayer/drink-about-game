@@ -8,4 +8,4 @@ function whatCanIDrink(age) {
   }
 }
 
-// 2 specs, 0 Failures.
+// 3 specs, 0 failures in Jasmine.
