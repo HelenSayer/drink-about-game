@@ -14,3 +14,6 @@ describe("DrinkAbout", function () {
     });
   });
 });
+
+// After adding all ages checked in Jasmine.
+// 4 specs, 0 failures.
