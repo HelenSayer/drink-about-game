@@ -22,7 +22,7 @@ Drink About is a simple function that will check the age and return a drink appr
 
 I have tried to work through the challenge following the example given in the CI training videos.
 
-For each step I have saved the Jasmine files: calcDrinkStep01.js, calcDrinkStep02, etc.
+For each step I have saved the Jasmine files: drinkSpecStep01.js, drinkSpecStep02, etc.
 
 And for each step I have saved the corresponding JavaScript files in the same way:
 drinkStep01.js, drinkStep02.js etc.
@@ -31,11 +31,10 @@ drinkStep01.js, drinkStep02.js etc.
 - step03 and step04 refer to Test suites.
 - step05 refers to the Defensive programming.
 - step06 refers to Spies.
-- step07 refers to Refactoring - Breaking our Tests.
-- step08 refers to Refactoring - Fixing our Tests.
-- step09 refers to setting up each spec.
+
+#### **Example of Jasmine Error**
 
 In step06 before amending drink.js get the following error as expected.
 ![Error message in Jasmine](assets/images/jasmine-alert-error.png)
 
-Change "return" to "alert" in drink.js at end of if else statement to fix. Now all 6 specs in calcDrink pass.
+Change "return" to "alert" in drink.js at end of if else statement to fix. Now all specs in calcDrink pass.
