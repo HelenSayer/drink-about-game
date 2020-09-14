@@ -13,5 +13,3 @@ describe("DrinkAbout", function () {
     });
   });
 });
-
-// 3 specs, 0 failures in Jasmine.

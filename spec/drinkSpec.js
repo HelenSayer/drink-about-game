@@ -1,3 +1,8 @@
+// describe("My whatCanIDrink function", function () {
+//   beforeEach(function () {
+//     drink = new whatCanIDrink();
+//   });
+
 describe("DrinkAbout", function () {
   describe("whatCanIDrink function", function () {
     it("should return 'Drink Toddy'", function () {
@@ -24,3 +29,6 @@ describe("DrinkAbout", function () {
     });
   });
 });
+// });
+
+// cannot understand the last part of exercise making the function an instance of the object = My whatCanIDrink function.

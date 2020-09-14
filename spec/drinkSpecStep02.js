@@ -10,6 +10,3 @@ describe("DrinkAbout", function () {
     });
   });
 });
-
-// When index.html is run get 1 spec, 0 Failures.
-// now has content in drink.js.
