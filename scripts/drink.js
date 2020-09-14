@@ -10,6 +10,6 @@ function whatCanIDrink(age) {
   } else if (age > 130 || age <= 0) {
     return "Sorry. I can’t tell what drink because that age is incorrect!";
   } else {
-    return "Error!";
+    alert("Error!");
   }
 }
